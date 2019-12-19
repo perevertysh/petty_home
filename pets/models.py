@@ -38,7 +38,7 @@ class Pet(models.Model):
         super().save()
 
     def make_word_end(self):
-        word = "студентов"
+        word = "лет"
         n = self.age
         if n > 99:
             n = n % 100
