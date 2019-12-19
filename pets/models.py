@@ -24,11 +24,18 @@ class Pet(models.Model):
     age = models.IntegerField(verbose_name="Возраст",
                               validators=[validators.MaxValueValidator(100)])
     doc = models.ForeignKey('petdocs.Registration', on_delete=models.CASCADE,
-                            verbose_name="Регистрационный документ")
+                            verbose_name="Регистрационный документ",
+                            related_name="pet_registration")
     breed = models.ForeignKey('pets.Breed', on_delete=models.CASCADE,
                               verbose_name="Порода")
     owner = models.ForeignKey("petdocs.Owner", on_delete=models.CASCADE,
                               verbose_name="Владелец", blank=True, null=True)
+
+    def save(self, force_insert=False, force_update=False, using=None,
+             update_fields=None):
+        self.doc.reg_num = self.breed.name[0] + self.doc.date.strftime("%d%m%Y")
+        self.doc.save()
+        super().save()
 
     def make_word_end(self):
         word = "студентов"
