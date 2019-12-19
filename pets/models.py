@@ -31,7 +31,7 @@ class Pet(models.Model):
                               verbose_name="Владелец", blank=True, null=True)
 
     def make_word_end(self):
-        word = "студентов"
+        word = "лет"
         n = self.age
         if n > 99:
             n = n % 100
