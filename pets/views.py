@@ -15,17 +15,5 @@ class IndexPageView(TemplateView):
 class PetListView(ListView):
     model = Pet
 
-
-class PetCreateView(CreateView):
-    model = Pet
-    fields = ['name']
-
-
-class PetUpdateView(UpdateView):
-    model = Pet
-    fields = ['name']
-
-
-class PetDeleteView(DeleteView):
-    model = Pet
-    success_url = reverse_lazy('pet-list')
+class ContactsView(TemplateView):
+    template_name = 'contacts.html'
