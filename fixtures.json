@@ -1,0 +1,103 @@
+[
+  {
+    "model": "pets.breed",
+    "pk": "fc9ab3cb-9b78-4d0e-900d-58e0af3c6c33",
+    "fields": {
+      "name": "\u043f\u0438\u0442\u0431\u0443\u043b\u044c",
+      "code": "pitbull"
+    }
+  },
+  {
+    "model": "pets.pet",
+    "pk": "506f0d56-6e32-4d10-aef3-705fd0590b74",
+    "fields": {
+      "name": "\u0420\u044d\u0439",
+      "age": 1,
+      "doc": "359ad8f6-9508-4af7-8d2a-0c0373a0d088",
+      "photo": "pets_photo/pit3.jpeg",
+      "breed": "fc9ab3cb-9b78-4d0e-900d-58e0af3c6c33",
+      "owner": null
+    }
+  },
+  {
+    "model": "pets.pet",
+    "pk": "8e7a9025-ef10-4f23-8560-8c53795048b2",
+    "fields": {
+      "name": "\u041c\u0430\u0440\u043a",
+      "age": 0,
+      "doc": "f4e16308-5bb5-41ae-bf72-318878dc3081",
+      "photo": "pets_photo/pit2.jpeg",
+      "breed": "fc9ab3cb-9b78-4d0e-900d-58e0af3c6c33",
+      "owner": null
+    }
+  },
+  {
+    "model": "pets.pet",
+    "pk": "8f59ff08-3f24-4b4e-8c71-134b1fc3c0ee",
+    "fields": {
+      "name": "\u0424\u0435\u043b\u0438\u043a\u0441",
+      "age": 2,
+      "doc": "b7686d57-c99c-4395-922b-90d91b53c3b6",
+      "photo": "pets_photo/felix.jpeg",
+      "breed": "fc9ab3cb-9b78-4d0e-900d-58e0af3c6c33",
+      "owner": null
+    }
+  },
+  {
+    "model": "pets.pet",
+    "pk": "e3ff4abf-bfbb-41d1-80ef-d8ddc99f1eef",
+    "fields": {
+      "name": "\u0414\u0436\u0438\u043c\u043c\u0438",
+      "age": 3,
+      "doc": "2050fc36-f5f6-4801-8c00-6fab6b1b89fd",
+      "photo": "pets_photo/pit1_rrAhkf8.jpeg",
+      "breed": "fc9ab3cb-9b78-4d0e-900d-58e0af3c6c33",
+      "owner": null
+    }
+  },
+  {
+    "model": "petdocs.registration",
+    "pk": "2050fc36-f5f6-4801-8c00-6fab6b1b89fd",
+    "fields": {
+      "reg_num": "\u043f21122019",
+      "date": "2019-12-21",
+      "cage": "\u0410002"
+    }
+  },
+  {
+    "model": "petdocs.registration",
+    "pk": "359ad8f6-9508-4af7-8d2a-0c0373a0d088",
+    "fields": {
+      "reg_num": "\u043f21122019",
+      "date": "2019-12-21",
+      "cage": "\u0410003"
+    }
+  },
+  {
+    "model": "petdocs.registration",
+    "pk": "900ccd20-49da-4dc5-ab7d-7c6c276382bb",
+    "fields": {
+      "reg_num": "nope",
+      "date": "2019-12-19",
+      "cage": "A001"
+    }
+  },
+  {
+    "model": "petdocs.registration",
+    "pk": "b7686d57-c99c-4395-922b-90d91b53c3b6",
+    "fields": {
+      "reg_num": "\u043f20122019",
+      "date": "2019-12-20",
+      "cage": "\u0410001"
+    }
+  },
+  {
+    "model": "petdocs.registration",
+    "pk": "f4e16308-5bb5-41ae-bf72-318878dc3081",
+    "fields": {
+      "reg_num": "\u043f21122019",
+      "date": "2019-12-21",
+      "cage": "\u0410004"
+    }
+  }
+]

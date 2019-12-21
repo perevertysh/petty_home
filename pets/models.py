@@ -3,6 +3,7 @@ import uuid
 from django.utils.translation import gettext_lazy as _
 from django.core import validators
 from django.db import models
+from django.urls import reverse
 
 
 class Breed(models.Model):
@@ -26,6 +27,7 @@ class Pet(models.Model):
     doc = models.ForeignKey('petdocs.Registration', on_delete=models.CASCADE,
                             verbose_name="Регистрационный документ",
                             related_name="pet_registration")
+    photo = models.ImageField(upload_to='pets_photo', blank=True)
     breed = models.ForeignKey('pets.Breed', on_delete=models.CASCADE,
                               verbose_name="Порода")
     owner = models.ForeignKey("petdocs.Owner", on_delete=models.CASCADE,
@@ -53,3 +55,6 @@ class Pet(models.Model):
     def __str__(self):
         return "{} ({}, {})".format(self.name, self.breed,
                                     self.make_word_end())
+
+    def get_absolute_url(self):
+        return reverse('pet-detail', kwargs={'pk': self.pk})
