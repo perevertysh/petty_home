@@ -34,7 +34,9 @@
     <div id="logo">
         Дом Питомца
     </div>
-    <input class="form-control search-form" type="text" placeholder="...">
+    <form action="/pets/" class="form-row">
+    <input class="form-control search-form" name="q" type="search" placeholder="...">
+    </form>
 </header>
 <main>
     {% block content %}
