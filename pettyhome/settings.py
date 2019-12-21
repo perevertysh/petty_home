@@ -17,7 +17,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '0.0.0.0', 'pettyhome.herokuapp.com']
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 
 # Application definition
 
