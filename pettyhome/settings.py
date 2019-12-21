@@ -17,7 +17,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '0.0.0.0', 'pettyhome.herokuapp.com']
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 
 # Application definition
 
@@ -115,14 +115,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
-STATIC_DIR = (
+STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-if DEBUG:
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-else:
-    STATIC_ROOT = os.environ.get('DJANGO_STATIC_ROOT')
-STATICFILES_DIRS = [STATIC_DIR, ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 
