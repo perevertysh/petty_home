@@ -1,10 +1,58 @@
 [
   {
     "model": "pets.breed",
+    "pk": "08ba4acd-fc2b-488b-b80e-bf79c8097afc",
+    "fields": {
+      "name": "\u041d\u0435\u043c\u0435\u0446\u043a\u0430\u044f \u043e\u0432\u0447\u0430\u0440\u043a\u0430",
+      "code": "gerovcharka"
+    }
+  },
+  {
+    "model": "pets.breed",
+    "pk": "43939f59-1dea-4895-bcf7-3f3ca7f73b80",
+    "fields": {
+      "name": "\u0410\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u0438\u0439 \u0441\u0442\u0430\u0444\u043e\u0440\u0434\u0448\u0438\u0440\u0441\u043a\u0438\u0439 \u0442\u0435\u0440\u044c\u0435\u0440",
+      "code": "amstaf"
+    }
+  },
+  {
+    "model": "pets.breed",
+    "pk": "894fcd94-67af-4d23-98d4-f9ad998f47aa",
+    "fields": {
+      "name": "\u0422\u0430\u043a\u0441\u0430",
+      "code": "tax"
+    }
+  },
+  {
+    "model": "pets.breed",
     "pk": "fc9ab3cb-9b78-4d0e-900d-58e0af3c6c33",
     "fields": {
-      "name": "\u043f\u0438\u0442\u0431\u0443\u043b\u044c",
+      "name": "\u041f\u0438\u0442\u0431\u0443\u043b\u044c",
       "code": "pitbull"
+    }
+  },
+  {
+    "model": "pets.pet",
+    "pk": "0469707b-ba9b-456f-814a-df04a7cb9f29",
+    "fields": {
+      "name": "\u0421\u044d\u043c",
+      "age": 2,
+      "doc": "dc8c5422-6cf5-4c62-8e77-dd5d2e4fdb9e",
+      "photo": "pets_photo/amstaf1.jpeg",
+      "breed": "43939f59-1dea-4895-bcf7-3f3ca7f73b80",
+      "owner": null
+    }
+  },
+  {
+    "model": "pets.pet",
+    "pk": "10e3a4eb-ed4c-4bed-93a0-99418c8046bc",
+    "fields": {
+      "name": "\u041c\u0443\u0445\u0442\u0430\u0440",
+      "age": 0,
+      "doc": "717432d4-4edf-4457-afb3-17373d405224",
+      "photo": "pets_photo/grovcharka1.jpeg",
+      "breed": "08ba4acd-fc2b-488b-b80e-bf79c8097afc",
+      "owner": null
     }
   },
   {
@@ -33,6 +81,18 @@
   },
   {
     "model": "pets.pet",
+    "pk": "8e96b332-2482-4a87-a111-ee91e940e2de",
+    "fields": {
+      "name": "\u041b\u043e\u043b\u0430",
+      "age": 3,
+      "doc": "3bd2b72a-c188-41a1-b1c3-d09dfcade4d8",
+      "photo": "pets_photo/taksa1.jpeg",
+      "breed": "894fcd94-67af-4d23-98d4-f9ad998f47aa",
+      "owner": null
+    }
+  },
+  {
+    "model": "pets.pet",
     "pk": "8f59ff08-3f24-4b4e-8c71-134b1fc3c0ee",
     "fields": {
       "name": "\u0424\u0435\u043b\u0438\u043a\u0441",
@@ -40,6 +100,18 @@
       "doc": "b7686d57-c99c-4395-922b-90d91b53c3b6",
       "photo": "pets_photo/felix.jpeg",
       "breed": "fc9ab3cb-9b78-4d0e-900d-58e0af3c6c33",
+      "owner": null
+    }
+  },
+  {
+    "model": "pets.pet",
+    "pk": "97d5c3cf-83d9-412e-85d4-e412f6968d7d",
+    "fields": {
+      "name": "\u0420\u0438\u043a",
+      "age": 0,
+      "doc": "e7df7cdd-1012-4c32-a90e-004b46f4bc01",
+      "photo": "pets_photo/amstaf2.jpeg",
+      "breed": "43939f59-1dea-4895-bcf7-3f3ca7f73b80",
       "owner": null
     }
   },
@@ -75,6 +147,24 @@
   },
   {
     "model": "petdocs.registration",
+    "pk": "3bd2b72a-c188-41a1-b1c3-d09dfcade4d8",
+    "fields": {
+      "reg_num": "\u042222122019",
+      "date": "2019-12-22",
+      "cage": "\u0412007"
+    }
+  },
+  {
+    "model": "petdocs.registration",
+    "pk": "717432d4-4edf-4457-afb3-17373d405224",
+    "fields": {
+      "reg_num": "\u041d22122019",
+      "date": "2019-12-22",
+      "cage": "\u0410004"
+    }
+  },
+  {
+    "model": "petdocs.registration",
     "pk": "900ccd20-49da-4dc5-ab7d-7c6c276382bb",
     "fields": {
       "reg_num": "nope",
@@ -89,6 +179,24 @@
       "reg_num": "\u043f20122019",
       "date": "2019-12-20",
       "cage": "\u0410001"
+    }
+  },
+  {
+    "model": "petdocs.registration",
+    "pk": "dc8c5422-6cf5-4c62-8e77-dd5d2e4fdb9e",
+    "fields": {
+      "reg_num": "\u041022122019",
+      "date": "2019-12-22",
+      "cage": "\u0411002"
+    }
+  },
+  {
+    "model": "petdocs.registration",
+    "pk": "e7df7cdd-1012-4c32-a90e-004b46f4bc01",
+    "fields": {
+      "reg_num": "\u041022122019",
+      "date": "2019-12-22",
+      "cage": "\u0410008"
     }
   },
   {
