@@ -20,7 +20,7 @@ class Registration(models.Model):
     #                         null=False, related_name="registration_pet")
 
     def __str__(self):
-        return self.date.strftime("%d-%m-%Y")
+        return self.reg_num if self.reg_num else self.date.strftime("%d-%m-%Y")
 
 
 class Owner(models.Model):
