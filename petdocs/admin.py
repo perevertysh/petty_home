@@ -10,6 +10,7 @@ class RegistrationForm(ModelForm):
 
 @admin.register(Registration)
 class RegistrationAdmin(admin.ModelAdmin):
+    """Регистрационные документы"""
     exclude = ["reg_num"]
 
 

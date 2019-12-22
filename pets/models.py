@@ -35,7 +35,8 @@ class Pet(models.Model):
 
     def save(self, force_insert=False, force_update=False, using=None,
              update_fields=None):
-        self.doc.reg_num = self.breed.name[0] + self.doc.date.strftime("%d%m%Y")
+        self.doc.reg_num = self.breed.name[0] + self.doc.date.strftime(
+            "%d%m%Y")
         self.doc.save()
         super().save()
 
