@@ -15,35 +15,37 @@
     {% endblock extra_head %}
 </head>
 <body>
-<header>
-    <form action="/">
-        <button class="btn  block block-text">
-            О нас
-        </button>
-    </form>
-    <form action="/pets">
-        <button class="btn  block block-text">
-            питомцы
-        </button>
-    </form>
-    <form action="/contacts">
-        <button class="btn  block block-text">
-            контакты
-        </button>
-    </form>
-    <div id="logo">
-        Дом Питомца
+    <div class="body-flex">
+        <header>
+            <form action="/">
+                <button class="btn  block block-text">
+                    О нас
+                </button>
+            </form>
+            <form action="/pets">
+                <button class="btn  block block-text">
+                    питомцы
+                </button>
+            </form>
+            <form action="/contacts">
+                <button class="btn  block block-text">
+                    контакты
+                </button>
+            </form>
+            <div id="logo">
+                Дом Питомца
+            </div>
+            <form action="/pets/" class="form-row">
+            <input class="form-control search-form" name="q" type="search" placeholder="...">
+            </form>
+        </header>
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+        <footer>
+            <div class="footer-box">
+            </div>
+        </footer>
     </div>
-    <form action="/pets/" class="form-row">
-    <input class="form-control search-form" name="q" type="search" placeholder="...">
-    </form>
-</header>
-<main>
-    {% block content %}
-    {% endblock %}
-</main>
-<footer>
-    <div class="footer-box">
-    </div>
-</footer>
 </body>
