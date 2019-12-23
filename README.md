@@ -1,7 +1,7 @@
 # petty_home
 Проект настроен для деплоя на heroku.
 
-Необходимо добавить postgres в heroku resorces.
+Необходимо добавить postgres в heroku resources.
 
 Прилинковать репозиторий в настройки деплоя heroku.
 
